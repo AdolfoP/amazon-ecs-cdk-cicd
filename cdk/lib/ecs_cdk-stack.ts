@@ -39,7 +39,7 @@ export class EcsCdkStack extends cdk.Stack {
     const taskRole = new iam.Role(this, `ecs-taskRole-${this.stackName}`, {
       roleName: `ecs-taskRole-${this.stackName}`,
       assumedBy: new iam.ServicePrincipal('ecs-tasks.amazonaws.com')
-    });
+    }); 
 
 
 
